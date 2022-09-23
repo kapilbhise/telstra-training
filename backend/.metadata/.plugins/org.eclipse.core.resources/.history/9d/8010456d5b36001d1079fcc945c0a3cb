@@ -1,7 +1,0 @@
-certificate:
-    app:
-        jwtExpirationMs: 600000
-        jwtSecret: knowledgeFactory
-        year: 9
-        day: 9
-        

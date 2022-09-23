@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring accessors="true" comment="Delete element from project &apos;CertificateManagement&apos;&#x0D;&#x0A;- Original project: &apos;CertificateManagement&apos;&#x0D;&#x0A;- Original element: &apos;CertificateManagement/src/main/java/com.certificate.learning.digitalCertificate.consts&apos;" description="Delete element" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.certificate.learning.digitalCertificate.consts" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1663673668271" subPackages="false" version="1.0"/>
-</session>
