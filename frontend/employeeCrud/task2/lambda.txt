@@ -1,0 +1,8 @@
+Create a Lambda function find a number is prime or not
+Create a Lambda function to find power (p) of a number(n) e.g: N^P   i/p: 2^3 o/p: 8
+Create a Lambda function to get last 2 digits of a number. i/p: 4578 o/p: 78
+Create a Lambda function to remove last 2 digits of a number. i/p: 2022 o/p: 20
+Create a Lambda function to increase employee salary by 10%
+Create a Lambda function to remove an employee by id
+Create a Lambda function to update an employee name by id
+

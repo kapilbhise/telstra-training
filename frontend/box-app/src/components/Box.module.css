@@ -1,0 +1,37 @@
+.box{
+    background-color: lightcoral;
+    width: 30%;
+    height:fit-content;
+    margin: 10px;
+    align-items: center;
+    box-shadow:2px 2px 2px gray;
+}
+
+
+.btn{
+    margin-top: 5px;
+    background-color: brown;
+    color: white;
+    border: 1px solid black;
+    margin-left: 40%;
+    border-radius: 5px;
+    margin-top: 2.5vh;
+    font-size: medium;
+    padding: 5px;
+    margin: 10px;
+
+}
+.btn:hover{
+    background-color: burlywood;
+    color:antiquewhite;
+}
+
+.btn.click{
+    background-color: greenyellow;
+    color:white;
+    
+}
+
+h2{
+    text-align: center;
+}

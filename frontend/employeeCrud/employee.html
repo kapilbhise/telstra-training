@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <title>Employee CRUD</title>
+  <style>
+    button {
+      margin: 10px;
+      background-color: blanchedalmond;
+      color: brown;
+    }
+    button:hover {
+      background-color: lightblue;
+    }
+    body {
+      background-color: antiquewhite;
+      color: brown;
+    }
+  </style>
+  <script src="./employeeService.js"></script>
+  <body>
+    <h1>CRUD Operations on Employee List</h1>
+    <h2>Employee List</h2>
+
+    <h3 id="demo"></h3>
+
+    <br />
+    <h3 id="employee"></h3>
+    <button onclick="addEmployee({id:23,name:'Aniket',salary:3500})">
+      Add Employee
+    </button>
+    <button onclick="removeEmployee(22)">Remove Employee</button>
+    <button onclick="updateEmployee(2,{id: 2,name:'Jay',salary:8600})">
+      Update Employee
+    </button>
+    <br />
+
+    <button onclick="employee(2)">Get Employee</button>
+
+    <button onclick="displayEmployees()">Display Employees</button>
+    <br />
+
+    <button onclick="sortBy(1)">Sort by Id</button>
+    <button onclick="sortBy(2)">Sort by Name</button>
+    <button onclick="sortBy(3)">Sort by Salary</button>
+
+    <script>
+      displayEmployees();
+    </script>
+  </body>
+</html>

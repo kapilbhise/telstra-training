@@ -1,0 +1,30 @@
+<apex:page standardController="account">
+    <apex:form>
+
+        <apex:pageblock>
+
+            <apex:pageblockSection>
+
+                <apex:inputField id="accName" value="{!account.name}" />
+
+                <apex:outputField id="accName1" value="{!account.name}" />
+
+                <apex:inputField id="accSource" value="{!account.AccountSource}" />
+
+                <apex:inputField id="accSLAExp" value="{!account.SLAExpirationDate__c}" />
+
+            </apex:pageblockSection>
+
+            <apex:pageBlockButtons>
+
+                <apex:commandButton value="Save" action="{!save}" />
+
+                <apex:commandButton value="Cancel" action="{!cancel}" />
+
+            </apex:pageBlockButtons>
+
+        </apex:pageblock>
+
+    </apex:form>
+
+</apex:page>

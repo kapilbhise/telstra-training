@@ -1,0 +1,12 @@
+1. Create an array of Employee objects.
+2. Write an function to add an employee to Employees array.
+3. WF to remove / update an employee by id from employee array.
+4. WF to get the employee object by id from employees array.
+5. WF to display Employees array.
+6. WF to display Employee
+7. WF to sort Employees by id / name / salary 
+
+let employee={id:1,name:"abc",salary:5000.0};
+let employees = [{id:1,name:"name9",salary:5000.0},
+                 {id:2,name:"name3",salary:3000.0},
+                 {id:3,name:"name7",salary:2000.0}   ]

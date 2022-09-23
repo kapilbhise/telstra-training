@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+        color: brown;
+      }
+      .div-class {
+        font-size: large;
+        font-weight: 300;
+        border: 20px solid bisque;
+      }
+      .button {
+        background-color: blanchedalmond;
+        color: brown;
+      }
+      .button:hover {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="container div-class"
+      style="align-items: center; text-align: center"
+    >
+      <h1>Login Page</h1>
+      <form
+        action="#"
+        style="text-align: center; margin: 20px"
+        method="post"
+        id="loginForm"
+        name="loginUser"
+        placeholders
+      >
+        <label for="username">Username :</label><br />
+        <input
+          type="text"
+          id="fname"
+          name="username"
+          placeholder="username"
+          style="justify-content: left"
+          required
+          pattern="\w+"
+          title="Enter your username"
+          minlength="6"
+          maxlength="20"
+          autofocus
+        /><br />
+        <br />
+        <label for="password">Password :</label><br />
+        <input
+          type="text"
+          id="fname"
+          name="password"
+          placeholder="password"
+          required
+          minlength="6"
+          maxlength="20"
+          pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,}$/"
+          title="Password must contain at least 6 characters, including UPPER/lowercase and numbers"
+        /><br />
+        <br />
+        <input class="button" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

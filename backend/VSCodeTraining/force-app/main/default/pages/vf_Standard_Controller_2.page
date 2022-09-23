@@ -1,0 +1,19 @@
+<apex:page standardController="Account" recordSetVar="accounts" tabstyle="account" sidebar="false">
+    <apex:form>
+        <apex:pageBlock>
+            <apex:pageBlockTable value="{!accounts}" var="a">
+                <apex:column>
+                    <apex:facet name="header">Account Name</apex:facet>
+                    <apex:commandLink>
+                        {!a.name}
+                        <apex:param name="AccId" value="{!a.id}" />
+                    </apex:commandLink>
+                </apex:column>
+                <apex:column value="{!a.AccountNumber}" />
+                <apex:column value="{!a.AccountSource}" />
+                <apex:column value="{!a.CustomerPriority__c}" />
+                <apex:column value="{!a.SLAExpirationDate__c}" />
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

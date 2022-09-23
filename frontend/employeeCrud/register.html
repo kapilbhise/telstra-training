@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <script></script>
+    <style>
+      body {
+        background-color: antiquewhite;
+        color: brown;
+      }
+      .div-class {
+        font-size: large;
+        font-weight: 300;
+        border: 20px solid bisque;
+      }
+      .button {
+        background-color: blanchedalmond;
+        color: brown;
+      }
+      .button:hover {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div-class" style="align-items: center; text-align: center">
+      <script>
+        function checkPassword(str) {
+          // at least one number, one lowercase and one uppercase letter
+          // at least six characters that are letters, numbers or the underscore
+          var re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,}$/;
+          return re.test(str);
+        }
+      </script>
+      <h1>Register Page</h1>
+      <form
+        action="#"
+        style="text-align: center; margin: 20px"
+        method="POST"
+        id="loginForm"
+        name="loginUser"
+        placeholders
+        onsubmit="checkForm(this)"
+      >
+        <label for="email">Email : </label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+          placeholder="Email"
+          autofocus
+        /><br /><br />
+        <label for="username">Username :</label> <br />
+        <input
+          type="text"
+          id="fname"
+          name="username"
+          placeholder="username"
+          style="justify-content: left"
+          required
+          pattern="\w+"
+          title="Enter your username"
+          minlength="6"
+          maxlength="20"
+        /><br />
+        <br />
+        <label for="password">Password :</label><br />
+        <input
+          type="text"
+          id="fname"
+          name="password"
+          placeholder="password"
+          required
+          minlength="6"
+          maxlength="20"
+          pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,}$/"
+          title="Password must contain at least 6 characters, including UPPER/lowercase and numbers"
+        /><br />
+        <br />
+        <input class="button" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

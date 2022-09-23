@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Demo</title>
+    <script src="js/myScript.js"></script>
+  </head>
+
+  <body>
+    <script>
+      let cars = ["Saab", "Volvo", "BMW"]; // @2000
+      cars[5] = "monday";
+      // document.getElementById("demo").innerHTML = cars[3];
+    </script>
+
+    <div>
+      let x=10; let y="10";
+      <br />
+      <script>
+        let x = 10; // number
+        let y = "10"; // string
+        let z;
+        document.write(typeof x);
+        document.write(typeof y);
+        document.write(typeof z);
+
+        
+
+        document.write("x==y?:" + (x == y));
+        document.write("x===y?:" + (x === y));
+      </script>
+
+      <h3>Hello am header.</h3>
+      <p id="demo">
+        HTML is the standard markup language for Web pages. With HTML you can
+        create your own Website. HTML is easy to learn - You will enjoy it!
+      </p>
+      <button type="button" onclick="myFunction2()">Change Me!</button>
+    </div>
+
+    <div id="login">
+      <h1>Login Form</h1>
+
+      <form action="/action_page.php">
+        <label for="fname">User name:</label><br />
+        <input type="text" id="fname" name="fname" /><br />
+
+        <label for="lname">Password:</label><br />
+        <input
+          type="password"
+          id="lname"
+          name="lname"
+          value="Doe"
+        /><br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <button
+      type="button"
+      onclick="document.getElementById('fname').style.display='none'"
+    >
+      hide Me!
+    </button>
+
+    <button
+      type="button"
+      onclick="document.getElementById('fname').style.display='block'"
+    >
+      Un hide Me!
+    </button>
+  </body>
+</html>

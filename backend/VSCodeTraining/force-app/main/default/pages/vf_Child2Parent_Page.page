@@ -1,0 +1,23 @@
+<apex:page StandardController="Account">
+    <apex:form>
+        <apex:pageBlock title="Helloooo {!$User.FirstName}!">
+            <p>You are now viewing the {!account.name} account.</p> 
+            <apex:pageBlockSection title="Account Section" columns="2">
+                <apex:inputField value="{!account.accountnumber}" />
+                <apex:inputField value="{!account.industry}" />
+                <apex:inputField value="{!account.billingstreet}" />
+                <apex:inputField value="{!account.Owner.FirstName}" />
+                <apex:inputField value="{!account.Owner.Profile.Name}" />
+                <apex:inputField value="{!account.Owner.Profile.UserLicense.Name}" />
+                <apex:pageBlockTable value="{!account.Contacts}" var="contact">
+                    <apex:column value="{!contact.Name}" />
+                    <apex:column value="{!contact.Phone}" />
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons>
+                <apex:commandButton action="{!save}" value="Save" />
+                <apex:commandButton action="{!cancel}" value="Cancel" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
